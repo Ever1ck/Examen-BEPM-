@@ -4,35 +4,7 @@ import pe.edu.upeu.bepm.utils.LeerTeclado;
 
 public class ResolucionExamen {
     LeerTeclado teclado = new LeerTeclado();
-    public void tablaDeMP() {
-        int total = 0;
-        for(int variable = 1; variable<=20; variable++) {
-            System.out.println("La tabla de multiplicar del "+variable);
-            for(int variable2 = 1; variable2 <= 10; variable2++) {
-                total = variable * variable2;
-                System.out.println(variable+" X "+variable2+" = "+total); 
-            }
-            System.out.println("\n");
-        }
-    }
-    public void Divisores(int numero) {
-        int i = 1;
-        while(i<numero) {
-            if(numero%i==0){
-                System.out.println("El divisor: "+i);
-            }else {
-            }
-            i++;
-        }
-    }
-    public int Recursiva(int base, int exponente) {
-        if(exponente==0) {
-            return 1;
-        }else{
-            return base * (int)Math.pow(base,exponente - 1);
-        }
-    }
-    public void gerenteCostos() {
+    public void CostoG() {
         int numero;
         double total1 = 0, total2 = 0, total3 = 0, total_final = 0;
         for(int j = 1; j <= 3;j++) {
@@ -64,4 +36,33 @@ public class ResolucionExamen {
         System.out.println("El total de la categoria 3 es: "+total3);
         System.out.println("El total en general de las 3 categorias es: "+ total_final);
     }
+    public void tablaDeMP() {
+        int total = 0;
+        for(int variable = 1; variable<=20; variable++) {
+            System.out.println("La tabla de multiplicar del "+variable);
+            for(int variable2 = 1; variable2 <= 10; variable2++) {
+                total = variable * variable2;
+                System.out.println(variable+" X "+variable2+" = "+total); 
+            }
+            System.out.println("\n");
+        }
+    }
+    public void Divisores(int numero) {
+        int i = 1;
+        while(i<numero) {
+            if(numero%i==0){
+                System.out.println("El divisor: "+i);
+            }else {
+            }
+            i++;
+        }
+    }
+    public int Recursiva(int base, int exponente) {
+        if(exponente==0) {
+            return 1;
+        }else{
+            return base * (int)Math.pow(base,exponente - 1);
+        }
+    }
+    
 }

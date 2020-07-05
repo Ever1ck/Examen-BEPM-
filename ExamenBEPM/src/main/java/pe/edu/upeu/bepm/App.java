@@ -22,7 +22,7 @@ public class App
         switch(numDeAlg){
             /**caso 1 */
             case 1: 
-            problemas.gerenteCostos();        
+            problemas.CostoG();        
             break;
             /**caso 2 */
             case 2: 
